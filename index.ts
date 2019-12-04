@@ -555,7 +555,8 @@ class ServerlessCustomDomain {
         const stackName = this.serverless.service.provider.stackName ||
             `${this.serverless.service.service}-${this.stage}`;
         const params = {
-            LogicalResourceId: "ApiGatewayRestApi",
+            // LogicalResourceId: "ApiGatewayRestApi",
+            LogicalResourceId: "WebsocketsApi",
             StackName: stackName,
         };
 
